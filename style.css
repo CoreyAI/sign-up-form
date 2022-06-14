@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 0.8fr 1.2fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+  "img intro"
+  "img form"
+  "img button"; 
+}
+
+.item-img {
+  grid-area: img;
+  background-color: blue;
+}
+
+.item-intro {
+  grid-area: intro;
+  background-color: red;
+}
+
+.item-form {
+  grid-area: form;
+  background-color: green;
+}
+
+.item-button {
+  grid-area: button;
+  background-color: purple;
+}
