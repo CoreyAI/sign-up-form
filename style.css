@@ -16,7 +16,9 @@
 
 .item-img {
   grid-area: img;
-  background-color: blue;
+  /* background-color: blue; */
+  background-image: url('klemen-vrankar-lcT_p8kLCsc-unsplash.jpg');
+  background-size: cover;
 }
 
 .item-intro {
@@ -32,4 +34,24 @@
 .item-button {
   grid-area: button;
   background-color: purple;
+}
+
+.credit {
+  position: relative;
+  top: 95vh;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  text-align: center;
+  max-width: fit-content;
+  margin: auto;
+  color: white;
+  padding: 5px;
+}
+
+.credit>a:link, .credit>a:visited {
+  color: white;
+}
+
+.credit>a:hover {
+  color:grey;
 }
