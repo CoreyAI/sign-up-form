@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(font/Norse-Bold.otf);
+}
+
 .grid-container {
   display: grid;
   position: fixed;
@@ -16,9 +21,11 @@
 
 .item-img {
   grid-area: img;
-  /* background-color: blue; */
-  background-image: url('klemen-vrankar-lcT_p8kLCsc-unsplash.jpg');
+  background-image: url('img/klemen-vrankar-lcT_p8kLCsc-unsplash.jpg');
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .item-intro {
@@ -36,16 +43,42 @@
   background-color: purple;
 }
 
+.odin-banner {
+  grid-area: img;
+  position: relative;
+  display: flex;
+  top: 20vh;
+  background: rgba(255, 255, 255, 0.15);
+  text-align: center;
+  height: 15vh;
+  color: white;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.odin-img {
+  position: relative;
+  height: 80%;
+  align-self: center;
+}
+
+.odin-title {
+  font-size: 8vh;
+  font-family: Norse-Bold; 
+}
+
 .credit {
   position: relative;
-  top: 95vh;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   text-align: center;
   max-width: fit-content;
-  margin: auto;
   color: white;
   padding: 5px;
+  font-size: 12px;
+  bottom: 4vh;
+  align-self: center;
 }
 
 .credit>a:link, .credit>a:visited {
