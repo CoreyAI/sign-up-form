@@ -1,3 +1,8 @@
+:root {
+  --background-color-dark: rgb(25, 25, 36);
+  --background-color-form: rgb(68, 68, 102);
+}
+
 @font-face {
   font-family: Norse-Bold;
   src: url(font/Norse-Bold.otf);
@@ -31,18 +36,22 @@
 .item-intro {
   display: flex;
   grid-area: intro;
-  background-color: rgb(25, 25, 36);
+  background-color: var(--background-color-dark);
   color: white;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1.25em;
 }
 
 .item-form {
   grid-area: form;
-  background-color: green;
+  background-color: var(--background-color-form);
+  font-size: 1.25em;
 }
 
 .item-button {
   grid-area: button;
-  background-color: purple;
+  background-color: var(--background-color-dark);
 }
 
 .odin-banner {
@@ -89,4 +98,12 @@
 
 .credit>a:hover {
   color:grey;
+}
+
+#right-side-text {
+  margin: 0 100px 0 25px;
+}
+
+.intro-paragraph {
+ padding-bottom: 50px;
 }
