@@ -29,8 +29,10 @@
 }
 
 .item-intro {
+  display: flex;
   grid-area: intro;
-  background-color: red;
+  background-color: rgb(25, 25, 36);
+  color: white;
 }
 
 .item-form {
