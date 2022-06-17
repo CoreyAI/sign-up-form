@@ -16,12 +16,11 @@
   width: 100vw;
   height: 100vh;
   grid-template-columns: 0.8fr 1.2fr; 
-  grid-template-rows: 33vh 33vh 33vh; 
+  grid-template-rows: 33vh 66vh;
   gap: 0px 0px; 
   grid-template-areas: 
   "img intro"
-  "img form"
-  "img button"; 
+  "img form";
 }
 
 .item-img {
@@ -31,6 +30,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-right: 2px solid white;
 }
 
 .item-intro {
@@ -45,14 +45,9 @@
 
 .item-form {
   grid-area: form;
-  background-color: var(--background-color-form);
+  background-color: var(--background-color-dark);
   font-size: 1.25em;
   color: white;
-}
-
-.item-button {
-  grid-area: button;
-  background-color: var(--background-color-dark);
 }
 
 .odin-banner {
@@ -102,62 +97,37 @@
 }
 
 #right-side-text {
-  margin: 0 100px 0 25px;
+  margin: 0 20vw 0 25px;
 }
 
 .intro-paragraph {
  padding-bottom: 50px;
 }
 
-.submit-button {
-  grid-area: button;
-  justify-self: end;
-}
-
-/* form {
-  display: grid;
-  grid-template-columns: 25px 50% 25px 50% 100px;
-  grid-template-rows: 33% 33% 33%;
-  gap: 0px 0px;
-  grid-template-areas:
-  "gap1 c11 gap2 cl2 gap3"
-  "gap1 c21 gap2 c22 gap3"
-  "gap1 c31 gap2 c32 gap3"
-} */
-
-/* #first-name + label[for=first-name] {
-  grid-area: c11;
-}
-
-#last-name {
-  grid-area: c12;
-}
-
-#email {
-  grid-area: c21;
-}
-
-#phone-number {
-  grid-area: c22;
-}
-
-#password {
-  grid-area: c31;
-}
-
-#password-confirm {
-  grid-area: c32;
-} */
-
 .field {
   display: grid;
-  grid-template-columns: max-content max-content 10% ;
+  grid-template-columns: 25% 50%;
   column-gap: 1em;
   margin-bottom: 10px;
-  margin-left: 25px;
 }
 
 form {
   height: inherit;
 }
 
+.form-box {
+  background-color: var(--background-color-form);
+  padding: 10px 25px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.submit-button {
+  background-color: var(--background-color-dark);
+  margin: 20px 0px;
+  font-size: 1.25rem;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 40px;
+  color: white;
+}
