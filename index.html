@@ -25,8 +25,48 @@
         You <i>know</i> you want to.
       </div>
     </div>
-    <div class="item-form">form</div>
-    <div class="item-button">button</div>
+    <div class="item-form">
+      <form action="#" method="get">
+        <!-- <fieldset class="field">
+          <legend>Register Now!</legend> -->
+          
+          <label for="first-name" class="field">
+            <span class="label-text">First Name:</span>
+            <input type="text" id="first-name" name="first-name" required>
+          </label> 
+          
+          <label for="last-name" class="field">
+            <span class="label-text">Last Name:</span>
+            <input type="text" id="last-name" name="last-name" required>
+          </label>
+
+          <label for="email" class="field">
+            <span class="label-text">Email:</span>
+            <input type="email" id="email" name="email" required>
+          </label>
+
+          <label for="phone-number" class="field">
+            <span class="label-text">Phone:</span>
+            <input type="number" id="number" name="phone-number" placeholder="XXX-XXX-XXXX">
+          </label>
+
+          <label for="password" class="field">
+            <span class="label-text">Password:</span>
+            <input type="password" id="password" name="password" required
+              minlength="5" maxlength="20">
+          </label>
+
+          <label for="password-confirm" class="field">
+            <span class="label-text">Confirm Password:</span>
+            <input type="password" id="password-confirm" name="password-confirm" required
+              minlength="5" maxlength="20">
+          </label>
+
+        <!-- </fieldset> -->
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+    <div class="item-button"></div>
   </div>
   <script src="script.js"></script>
 </body>

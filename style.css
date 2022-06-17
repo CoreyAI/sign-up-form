@@ -16,7 +16,7 @@
   width: 100vw;
   height: 100vh;
   grid-template-columns: 0.8fr 1.2fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-rows: 33vh 33vh 33vh; 
   gap: 0px 0px; 
   grid-template-areas: 
   "img intro"
@@ -47,6 +47,7 @@
   grid-area: form;
   background-color: var(--background-color-form);
   font-size: 1.25em;
+  color: white;
 }
 
 .item-button {
@@ -107,3 +108,56 @@
 .intro-paragraph {
  padding-bottom: 50px;
 }
+
+.submit-button {
+  grid-area: button;
+  justify-self: end;
+}
+
+/* form {
+  display: grid;
+  grid-template-columns: 25px 50% 25px 50% 100px;
+  grid-template-rows: 33% 33% 33%;
+  gap: 0px 0px;
+  grid-template-areas:
+  "gap1 c11 gap2 cl2 gap3"
+  "gap1 c21 gap2 c22 gap3"
+  "gap1 c31 gap2 c32 gap3"
+} */
+
+/* #first-name + label[for=first-name] {
+  grid-area: c11;
+}
+
+#last-name {
+  grid-area: c12;
+}
+
+#email {
+  grid-area: c21;
+}
+
+#phone-number {
+  grid-area: c22;
+}
+
+#password {
+  grid-area: c31;
+}
+
+#password-confirm {
+  grid-area: c32;
+} */
+
+.field {
+  display: grid;
+  grid-template-columns: max-content max-content 10% ;
+  column-gap: 1em;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+form {
+  height: inherit;
+}
+
