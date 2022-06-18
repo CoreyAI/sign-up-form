@@ -113,6 +113,14 @@
 
 form {
   height: inherit;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-area: 
+  "caption caption"
+  "firstName lastName"
+  "email phone"
+  "pass passConfirm"; */
 }
 
 .form-box {
@@ -130,6 +138,16 @@ form {
   border: 2px solid white;
   border-radius: 40px;
   color: white;
+}
+
+.submit-button:hover {
+  /* border: 4px solid white; */
+  background: var(--background-color-form);
+}
+
+.submit-button:active {
+  background: white;
+  color: black;
 }
 
 .label-text {
