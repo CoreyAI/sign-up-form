@@ -106,7 +106,7 @@
 
 .field {
   display: grid;
-  grid-template-columns: 25% 50%;
+  grid-template-columns: 10ch 50%;
   column-gap: 1em;
   margin-bottom: 10px;
 }
@@ -130,4 +130,8 @@ form {
   border: 2px solid white;
   border-radius: 40px;
   color: white;
+}
+
+.label-text {
+  text-align: end;
 }
