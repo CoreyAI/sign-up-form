@@ -39,12 +39,11 @@
   background-color: var(--background-color-dark);
   color: white;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   font-size: 1.25em;
 }
 
 .item-form {
-  grid-area: form;
   background-color: var(--background-color-dark);
   font-size: 1.25em;
   color: white;
@@ -100,49 +99,85 @@
   margin: 0 20vw 0 25px;
 }
 
-.intro-paragraph {
- padding-bottom: 50px;
-}
-
-.field {
-  display: grid;
-  grid-template-columns: 10ch 50%;
-  column-gap: 1em;
-  margin-bottom: 10px;
-}
-
-form {
-  height: inherit;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-area: 
-  "caption caption"
-  "firstName lastName"
-  "email phone"
-  "pass passConfirm"; */
-}
-
 .form-box {
   background-color: var(--background-color-form);
   padding: 10px 25px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+  display: grid;
+  grid-template-areas: 
+    "caption caption"
+    "firstName lastName"
+    "email phone"
+    "pass passConfirm"
+    "button button";
+  gap: 0.25em 2em;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.form-box>h2 {
+  grid-area: caption;
+  margin: 1rem 0rem;
+  justify-self: left;
+}
+
+.form-box>.field[for="first-name"] {
+  grid-area: firstName;
+}
+
+.form-box>.field[for="last-name"] {
+  grid-area: lastName;
+}
+
+.form-box>.field[for="emil"] {
+grid-area: email;
+}
+
+.form-box>.field[for="phone-number"] {
+  grid-area: phone;
+}
+
+.form-box>.field[for="password"] {
+  grid-area: pass;
+}
+
+.form-box>.field[for="password-confirm"] {
+  grid-area: passConfirm;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input {
+  background-color: var(--background-color-dark);
+  color: white;
+  border-radius: 10px;
 }
 
 .submit-button {
+  grid-area: button;
   background-color: var(--background-color-dark);
   margin: 20px 0px;
   font-size: 1.25rem;
   padding: 10px 30px;
-  border: 2px solid white;
+  border: 2px solid var(--background-color-form);
   border-radius: 40px;
   color: white;
+  justify-self: left;
 }
 
 .submit-button:hover {
   /* border: 4px solid white; */
   background: var(--background-color-form);
+  border: 2px solid white;
 }
 
 .submit-button:active {
@@ -151,5 +186,6 @@ form {
 }
 
 .label-text {
-  text-align: end;
+  text-align: start;
+  font-size: 1rem;
 }
